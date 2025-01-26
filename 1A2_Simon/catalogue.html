@@ -16,7 +16,7 @@
         <div class="logo">
             <img src="img/logo.png" onclick="goToIndex()" alt="Logo">
         </div>
-        <script> window.onload = getQueryParams;    </script>
+        <!--<script> window.onload = getQueryParams;    </script>-->
         <div class="search-bar center-buttons">
             <input type="text" placeholder="Nom du Pokémon" id="pokemonName">
             <select id="pokemonType">
@@ -44,7 +44,7 @@
         </div>
         <section id="pokemonCollection" class="pokemon-cards">
             <script>
-                listAllPokemon("pokemonCollection", pokemonData);
+                listAllPokemon("pokemonCollection", pokemonData, pokemonData);
                 document.addEventListener('DOMContentLoaded', () => { searchPokemon('pokemonCollection', pokemonData); });
             </script>
 

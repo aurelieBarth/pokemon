@@ -4,6 +4,7 @@ const pokemonData = {
     "height": 7,
     "weight": 69,
     "base_experience": 64,
+    "generation": "1",
     "name": {
       "fr": "Bulbizarre",
       "en": "Bulbasaur",
@@ -40,6 +41,7 @@ const pokemonData = {
     "height": 10,
     "weight": 130,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Herbizarre",
       "en": "Ivysaur",
@@ -77,6 +79,7 @@ const pokemonData = {
     "height": 20,
     "weight": 1000,
     "base_experience": 236,
+    "generation": "1",
     "name": {
       "fr": "Florizarre",
       "en": "Venusaur",
@@ -113,6 +116,7 @@ const pokemonData = {
     "height": 6,
     "weight": 85,
     "base_experience": 62,
+    "generation": "1",
     "name": {
       "fr": "Salamèche",
       "en": "Charmander",
@@ -146,6 +150,7 @@ const pokemonData = {
     "height": 11,
     "weight": 190,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Reptincel",
       "en": "Charmeleon",
@@ -180,6 +185,7 @@ const pokemonData = {
     "height": 17,
     "weight": 905,
     "base_experience": 240,
+    "generation": "1",
     "name": {
       "fr": "Dracaufeu",
       "en": "Charizard",
@@ -216,6 +222,7 @@ const pokemonData = {
     "height": 5,
     "weight": 90,
     "base_experience": 63,
+    "generation": "1",
     "name": {
       "fr": "Carapuce",
       "en": "Squirtle",
@@ -249,6 +256,7 @@ const pokemonData = {
     "height": 10,
     "weight": 225,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Carabaffe",
       "en": "Wartortle",
@@ -283,6 +291,7 @@ const pokemonData = {
     "height": 16,
     "weight": 855,
     "base_experience": 239,
+    "generation": "1",
     "name": {
       "fr": "Tortank",
       "en": "Blastoise",
@@ -316,6 +325,7 @@ const pokemonData = {
     "height": 3,
     "weight": 29,
     "base_experience": 39,
+    "generation": "1",
     "name": {
       "fr": "Chenipan",
       "en": "Caterpie",
@@ -349,6 +359,7 @@ const pokemonData = {
     "height": 7,
     "weight": 99,
     "base_experience": 72,
+    "generation": "1",
     "name": {
       "fr": "Chrysacier",
       "en": "Metapod",
@@ -383,6 +394,7 @@ const pokemonData = {
     "height": 11,
     "weight": 320,
     "base_experience": 178,
+    "generation": "1",
     "name": {
       "fr": "Papilusion",
       "en": "Butterfree",
@@ -419,6 +431,7 @@ const pokemonData = {
     "height": 3,
     "weight": 32,
     "base_experience": 39,
+    "generation": "1",
     "name": {
       "fr": "Aspicot",
       "en": "Weedle",
@@ -455,6 +468,7 @@ const pokemonData = {
     "height": 6,
     "weight": 100,
     "base_experience": 72,
+    "generation": "1",
     "name": {
       "fr": "Coconfort",
       "en": "Kakuna",
@@ -492,6 +506,7 @@ const pokemonData = {
     "height": 10,
     "weight": 295,
     "base_experience": 178,
+    "generation": "1",
     "name": {
       "fr": "Dardargnan",
       "en": "Beedrill",
@@ -528,6 +543,7 @@ const pokemonData = {
     "height": 3,
     "weight": 18,
     "base_experience": 50,
+    "generation": "1",
     "name": {
       "fr": "Roucool",
       "en": "Pidgey",
@@ -564,6 +580,7 @@ const pokemonData = {
     "height": 11,
     "weight": 300,
     "base_experience": 122,
+    "generation": "1",
     "name": {
       "fr": "Roucoups",
       "en": "Pidgeotto",
@@ -601,6 +618,7 @@ const pokemonData = {
     "height": 15,
     "weight": 395,
     "base_experience": 216,
+    "generation": "1",
     "name": {
       "fr": "Roucarnage",
       "en": "Pidgeot",
@@ -637,6 +655,7 @@ const pokemonData = {
     "height": 3,
     "weight": 35,
     "base_experience": 51,
+    "generation": "1",
     "name": {
       "fr": "Rattata",
       "en": "Rattata",
@@ -669,6 +688,7 @@ const pokemonData = {
     "height": 7,
     "weight": 185,
     "base_experience": 145,
+    "generation": "1",
     "name": {
       "fr": "Rattatac",
       "en": "Raticate",
@@ -701,6 +721,7 @@ const pokemonData = {
     "height": 3,
     "weight": 20,
     "base_experience": 52,
+    "generation": "1",
     "name": {
       "fr": "Piafabec",
       "en": "Spearow",
@@ -736,6 +757,7 @@ const pokemonData = {
     "height": 12,
     "weight": 380,
     "base_experience": 155,
+    "generation": "1",
     "name": {
       "fr": "Rapasdepic",
       "en": "Fearow",
@@ -771,6 +793,7 @@ const pokemonData = {
     "height": 20,
     "weight": 69,
     "base_experience": 58,
+    "generation": "1",
     "name": {
       "fr": "Abo",
       "en": "Ekans",
@@ -803,6 +826,7 @@ const pokemonData = {
     "height": 35,
     "weight": 650,
     "base_experience": 153,
+    "generation": "1",
     "name": {
       "fr": "Arbok",
       "en": "Arbok",
@@ -835,6 +859,7 @@ const pokemonData = {
     "height": 4,
     "weight": 60,
     "base_experience": 112,
+    "generation": "1",
     "name": {
       "fr": "Pikachu",
       "en": "Pikachu",
@@ -869,6 +894,7 @@ const pokemonData = {
     "height": 8,
     "weight": 300,
     "base_experience": 218,
+    "generation": "1",
     "name": {
       "fr": "Raichu",
       "en": "Raichu",
@@ -902,6 +928,7 @@ const pokemonData = {
     "height": 6,
     "weight": 120,
     "base_experience": 60,
+    "generation": "1",
     "name": {
       "fr": "Sabelette",
       "en": "Sandshrew",
@@ -934,6 +961,7 @@ const pokemonData = {
     "height": 10,
     "weight": 295,
     "base_experience": 158,
+    "generation": "1",
     "name": {
       "fr": "Sablaireau",
       "en": "Sandslash",
@@ -966,6 +994,7 @@ const pokemonData = {
     "height": 4,
     "weight": 70,
     "base_experience": 55,
+    "generation": "1",
     "name": {
       "fr": "Nidoran♀",
       "en": "Nidoran♀",
@@ -999,6 +1028,7 @@ const pokemonData = {
     "height": 8,
     "weight": 200,
     "base_experience": 128,
+    "generation": "1",
     "name": {
       "fr": "Nidorina",
       "en": "Nidorina",
@@ -1033,6 +1063,7 @@ const pokemonData = {
     "height": 13,
     "weight": 600,
     "base_experience": 227,
+    "generation": "1",
     "name": {
       "fr": "Nidoqueen",
       "en": "Nidoqueen",
@@ -1069,6 +1100,7 @@ const pokemonData = {
     "height": 5,
     "weight": 90,
     "base_experience": 55,
+    "generation": "1",
     "name": {
       "fr": "Nidoran♂",
       "en": "Nidoran♂",
@@ -1102,6 +1134,7 @@ const pokemonData = {
     "height": 9,
     "weight": 195,
     "base_experience": 128,
+    "generation": "1",
     "name": {
       "fr": "Nidorino",
       "en": "Nidorino",
@@ -1136,6 +1169,7 @@ const pokemonData = {
     "height": 14,
     "weight": 620,
     "base_experience": 227,
+    "generation": "1",
     "name": {
       "fr": "Nidoking",
       "en": "Nidoking",
@@ -1172,6 +1206,7 @@ const pokemonData = {
     "height": 6,
     "weight": 75,
     "base_experience": 113,
+    "generation": "1",
     "name": {
       "fr": "Mélofée",
       "en": "Clefairy",
@@ -1206,6 +1241,7 @@ const pokemonData = {
     "height": 13,
     "weight": 400,
     "base_experience": 217,
+    "generation": "1",
     "name": {
       "fr": "Mélodelfe",
       "en": "Clefable",
@@ -1239,6 +1275,7 @@ const pokemonData = {
     "height": 6,
     "weight": 99,
     "base_experience": 60,
+    "generation": "1",
     "name": {
       "fr": "Goupix",
       "en": "Vulpix",
@@ -1271,6 +1308,7 @@ const pokemonData = {
     "height": 11,
     "weight": 199,
     "base_experience": 177,
+    "generation": "1",
     "name": {
       "fr": "Feunard",
       "en": "Ninetales",
@@ -1303,6 +1341,7 @@ const pokemonData = {
     "height": 5,
     "weight": 55,
     "base_experience": 95,
+    "generation": "1",
     "name": {
       "fr": "Rondoudou",
       "en": "Jigglypuff",
@@ -1340,6 +1379,7 @@ const pokemonData = {
     "height": 10,
     "weight": 120,
     "base_experience": 196,
+    "generation": "1",
     "name": {
       "fr": "Grodoudou",
       "en": "Wigglytuff",
@@ -1376,6 +1416,7 @@ const pokemonData = {
     "height": 8,
     "weight": 75,
     "base_experience": 49,
+    "generation": "1",
     "name": {
       "fr": "Nosferapti",
       "en": "Zubat",
@@ -1412,6 +1453,7 @@ const pokemonData = {
     "height": 16,
     "weight": 550,
     "base_experience": 159,
+    "generation": "1",
     "name": {
       "fr": "Nosferalto",
       "en": "Golbat",
@@ -1449,6 +1491,7 @@ const pokemonData = {
     "height": 5,
     "weight": 54,
     "base_experience": 64,
+    "generation": "1",
     "name": {
       "fr": "Mystherbe",
       "en": "Oddish",
@@ -1486,6 +1529,7 @@ const pokemonData = {
     "height": 8,
     "weight": 86,
     "base_experience": 138,
+    "generation": "1",
     "name": {
       "fr": "Ortide",
       "en": "Gloom",
@@ -1524,6 +1568,7 @@ const pokemonData = {
     "height": 12,
     "weight": 186,
     "base_experience": 221,
+    "generation": "1",
     "name": {
       "fr": "Rafflesia",
       "en": "Vileplume",
@@ -1560,6 +1605,7 @@ const pokemonData = {
     "height": 3,
     "weight": 54,
     "base_experience": 57,
+    "generation": "1",
     "name": {
       "fr": "Paras",
       "en": "Paras",
@@ -1595,6 +1641,7 @@ const pokemonData = {
     "height": 10,
     "weight": 295,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Parasect",
       "en": "Parasect",
@@ -1630,6 +1677,7 @@ const pokemonData = {
     "height": 10,
     "weight": 300,
     "base_experience": 61,
+    "generation": "1",
     "name": {
       "fr": "Mimitoss",
       "en": "Venonat",
@@ -1665,6 +1713,7 @@ const pokemonData = {
     "height": 15,
     "weight": 125,
     "base_experience": 158,
+    "generation": "1",
     "name": {
       "fr": "Aéromite",
       "en": "Venomoth",
@@ -1700,6 +1749,7 @@ const pokemonData = {
     "height": 2,
     "weight": 8,
     "base_experience": 53,
+    "generation": "1",
     "name": {
       "fr": "Taupiqueur",
       "en": "Diglett",
@@ -1732,6 +1782,7 @@ const pokemonData = {
     "height": 7,
     "weight": 333,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Triopikeur",
       "en": "Dugtrio",
@@ -1764,6 +1815,7 @@ const pokemonData = {
     "height": 4,
     "weight": 42,
     "base_experience": 58,
+    "generation": "1",
     "name": {
       "fr": "Miaouss",
       "en": "Meowth",
@@ -1796,6 +1848,7 @@ const pokemonData = {
     "height": 10,
     "weight": 320,
     "base_experience": 154,
+    "generation": "1",
     "name": {
       "fr": "Persian",
       "en": "Persian",
@@ -1828,6 +1881,7 @@ const pokemonData = {
     "height": 8,
     "weight": 196,
     "base_experience": 64,
+    "generation": "1",
     "name": {
       "fr": "Psykokwak",
       "en": "Psyduck",
@@ -1860,6 +1914,7 @@ const pokemonData = {
     "height": 17,
     "weight": 766,
     "base_experience": 175,
+    "generation": "1",
     "name": {
       "fr": "Akwakwak",
       "en": "Golduck",
@@ -1892,6 +1947,7 @@ const pokemonData = {
     "height": 5,
     "weight": 280,
     "base_experience": 61,
+    "generation": "1",
     "name": {
       "fr": "Férosinge",
       "en": "Mankey",
@@ -1925,6 +1981,7 @@ const pokemonData = {
     "height": 10,
     "weight": 320,
     "base_experience": 159,
+    "generation": "1",
     "name": {
       "fr": "Colossinge",
       "en": "Primeape",
@@ -1959,6 +2016,7 @@ const pokemonData = {
     "height": 7,
     "weight": 190,
     "base_experience": 70,
+    "generation": "1",
     "name": {
       "fr": "Caninos",
       "en": "Growlithe",
@@ -1991,6 +2049,7 @@ const pokemonData = {
     "height": 19,
     "weight": 1550,
     "base_experience": 194,
+    "generation": "1",
     "name": {
       "fr": "Arcanin",
       "en": "Arcanine",
@@ -2023,6 +2082,7 @@ const pokemonData = {
     "height": 6,
     "weight": 124,
     "base_experience": 60,
+    "generation": "1",
     "name": {
       "fr": "Ptitard",
       "en": "Poliwag",
@@ -2057,6 +2117,7 @@ const pokemonData = {
     "height": 10,
     "weight": 200,
     "base_experience": 135,
+    "generation": "1",
     "name": {
       "fr": "Têtarte",
       "en": "Poliwhirl",
@@ -2092,6 +2153,7 @@ const pokemonData = {
     "height": 13,
     "weight": 540,
     "base_experience": 230,
+    "generation": "1",
     "name": {
       "fr": "Tartard",
       "en": "Poliwrath",
@@ -2128,6 +2190,7 @@ const pokemonData = {
     "height": 9,
     "weight": 195,
     "base_experience": 62,
+    "generation": "1",
     "name": {
       "fr": "Abra",
       "en": "Abra",
@@ -2161,6 +2224,7 @@ const pokemonData = {
     "height": 13,
     "weight": 565,
     "base_experience": 140,
+    "generation": "1",
     "name": {
       "fr": "Kadabra",
       "en": "Kadabra",
@@ -2195,6 +2259,7 @@ const pokemonData = {
     "height": 15,
     "weight": 480,
     "base_experience": 225,
+    "generation": "1",
     "name": {
       "fr": "Alakazam",
       "en": "Alakazam",
@@ -2228,6 +2293,7 @@ const pokemonData = {
     "height": 8,
     "weight": 195,
     "base_experience": 61,
+    "generation": "1",
     "name": {
       "fr": "Machoc",
       "en": "Machop",
@@ -2261,6 +2327,7 @@ const pokemonData = {
     "height": 15,
     "weight": 705,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Machopeur",
       "en": "Machoke",
@@ -2295,6 +2362,7 @@ const pokemonData = {
     "height": 16,
     "weight": 1300,
     "base_experience": 227,
+    "generation": "1",
     "name": {
       "fr": "Mackogneur",
       "en": "Machamp",
@@ -2328,6 +2396,7 @@ const pokemonData = {
     "height": 7,
     "weight": 40,
     "base_experience": 60,
+    "generation": "1",
     "name": {
       "fr": "Chétiflor",
       "en": "Bellsprout",
@@ -2364,6 +2433,7 @@ const pokemonData = {
     "height": 10,
     "weight": 64,
     "base_experience": 137,
+    "generation": "1",
     "name": {
       "fr": "Boustiflor",
       "en": "Weepinbell",
@@ -2401,6 +2471,7 @@ const pokemonData = {
     "height": 17,
     "weight": 155,
     "base_experience": 221,
+    "generation": "1",
     "name": {
       "fr": "Empiflor",
       "en": "Victreebel",
@@ -2437,6 +2508,7 @@ const pokemonData = {
     "height": 9,
     "weight": 455,
     "base_experience": 67,
+    "generation": "1",
     "name": {
       "fr": "Tentacool",
       "en": "Tentacool",
@@ -2472,6 +2544,7 @@ const pokemonData = {
     "height": 16,
     "weight": 550,
     "base_experience": 180,
+    "generation": "1",
     "name": {
       "fr": "Tentacruel",
       "en": "Tentacruel",
@@ -2507,6 +2580,7 @@ const pokemonData = {
     "height": 4,
     "weight": 200,
     "base_experience": 60,
+    "generation": "1",
     "name": {
       "fr": "Racaillou",
       "en": "Geodude",
@@ -2543,6 +2617,7 @@ const pokemonData = {
     "height": 10,
     "weight": 1050,
     "base_experience": 137,
+    "generation": "1",
     "name": {
       "fr": "Gravalanch",
       "en": "Graveler",
@@ -2580,6 +2655,7 @@ const pokemonData = {
     "height": 14,
     "weight": 3000,
     "base_experience": 223,
+    "generation": "1",
     "name": {
       "fr": "Grolem",
       "en": "Golem",
@@ -2616,6 +2692,7 @@ const pokemonData = {
     "height": 10,
     "weight": 300,
     "base_experience": 82,
+    "generation": "1",
     "name": {
       "fr": "Ponyta",
       "en": "Ponyta",
@@ -2648,6 +2725,7 @@ const pokemonData = {
     "height": 17,
     "weight": 950,
     "base_experience": 175,
+    "generation": "1",
     "name": {
       "fr": "Galopa",
       "en": "Rapidash",
@@ -2680,6 +2758,7 @@ const pokemonData = {
     "height": 12,
     "weight": 360,
     "base_experience": 63,
+    "generation": "1",
     "name": {
       "fr": "Ramoloss",
       "en": "Slowpoke",
@@ -2716,6 +2795,7 @@ const pokemonData = {
     "height": 16,
     "weight": 785,
     "base_experience": 172,
+    "generation": "1",
     "name": {
       "fr": "Flagadoss",
       "en": "Slowbro",
@@ -2751,6 +2831,7 @@ const pokemonData = {
     "height": 3,
     "weight": 60,
     "base_experience": 65,
+    "generation": "1",
     "name": {
       "fr": "Magnéti",
       "en": "Magnemite",
@@ -2787,6 +2868,7 @@ const pokemonData = {
     "height": 10,
     "weight": 600,
     "base_experience": 163,
+    "generation": "1",
     "name": {
       "fr": "Magnéton",
       "en": "Magneton",
@@ -2824,6 +2906,7 @@ const pokemonData = {
     "height": 8,
     "weight": 150,
     "base_experience": 123,
+    "generation": "1",
     "name": {
       "fr": "farfetchd",
       "en": "farfetchd",
@@ -2857,6 +2940,7 @@ const pokemonData = {
     "height": 14,
     "weight": 392,
     "base_experience": 62,
+    "generation": "1",
     "name": {
       "fr": "Doduo",
       "en": "Doduo",
@@ -2892,6 +2976,7 @@ const pokemonData = {
     "height": 18,
     "weight": 852,
     "base_experience": 161,
+    "generation": "1",
     "name": {
       "fr": "Dodrio",
       "en": "Dodrio",
@@ -2927,6 +3012,7 @@ const pokemonData = {
     "height": 11,
     "weight": 900,
     "base_experience": 65,
+    "generation": "1",
     "name": {
       "fr": "Otaria",
       "en": "Seel",
@@ -2959,6 +3045,7 @@ const pokemonData = {
     "height": 17,
     "weight": 1200,
     "base_experience": 166,
+    "generation": "1",
     "name": {
       "fr": "Lamantine",
       "en": "Dewgong",
@@ -2994,6 +3081,7 @@ const pokemonData = {
     "height": 9,
     "weight": 300,
     "base_experience": 65,
+    "generation": "1",
     "name": {
       "fr": "Tadmorv",
       "en": "Grimer",
@@ -3026,6 +3114,7 @@ const pokemonData = {
     "height": 12,
     "weight": 300,
     "base_experience": 175,
+    "generation": "1",
     "name": {
       "fr": "Grotadmorv",
       "en": "Muk",
@@ -3058,6 +3147,7 @@ const pokemonData = {
     "height": 3,
     "weight": 40,
     "base_experience": 61,
+    "generation": "1",
     "name": {
       "fr": "Kokiyas",
       "en": "Shellder",
@@ -3090,6 +3180,7 @@ const pokemonData = {
     "height": 15,
     "weight": 1325,
     "base_experience": 184,
+    "generation": "1",
     "name": {
       "fr": "Crustabri",
       "en": "Cloyster",
@@ -3125,6 +3216,7 @@ const pokemonData = {
     "height": 13,
     "weight": 1,
     "base_experience": 62,
+    "generation": "1",
     "name": {
       "fr": "Fantominus",
       "en": "Gastly",
@@ -3161,6 +3253,7 @@ const pokemonData = {
     "height": 16,
     "weight": 1,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Spectrum",
       "en": "Haunter",
@@ -3198,6 +3291,7 @@ const pokemonData = {
     "height": 15,
     "weight": 405,
     "base_experience": 225,
+    "generation": "1",
     "name": {
       "fr": "Ectoplasma",
       "en": "Gengar",
@@ -3234,6 +3328,7 @@ const pokemonData = {
     "height": 88,
     "weight": 2100,
     "base_experience": 77,
+    "generation": "1",
     "name": {
       "fr": "Onix",
       "en": "Onix",
@@ -3269,6 +3364,7 @@ const pokemonData = {
     "height": 10,
     "weight": 324,
     "base_experience": 66,
+    "generation": "1",
     "name": {
       "fr": "Soporifik",
       "en": "Drowzee",
@@ -3301,6 +3397,7 @@ const pokemonData = {
     "height": 16,
     "weight": 756,
     "base_experience": 169,
+    "generation": "1",
     "name": {
       "fr": "Hypnomade",
       "en": "Hypno",
@@ -3333,6 +3430,7 @@ const pokemonData = {
     "height": 4,
     "weight": 65,
     "base_experience": 65,
+    "generation": "1",
     "name": {
       "fr": "Krabby",
       "en": "Krabby",
@@ -3365,6 +3463,7 @@ const pokemonData = {
     "height": 13,
     "weight": 600,
     "base_experience": 166,
+    "generation": "1",
     "name": {
       "fr": "Krabboss",
       "en": "Kingler",
@@ -3397,6 +3496,7 @@ const pokemonData = {
     "height": 5,
     "weight": 104,
     "base_experience": 66,
+    "generation": "1",
     "name": {
       "fr": "Voltorbe",
       "en": "Voltorb",
@@ -3429,6 +3529,7 @@ const pokemonData = {
     "height": 12,
     "weight": 666,
     "base_experience": 168,
+    "generation": "1",
     "name": {
       "fr": "Électrode",
       "en": "Electrode",
@@ -3461,6 +3562,7 @@ const pokemonData = {
     "height": 4,
     "weight": 25,
     "base_experience": 65,
+    "generation": "1",
     "name": {
       "fr": "Noeunoeuf",
       "en": "Exeggcute",
@@ -3496,6 +3598,7 @@ const pokemonData = {
     "height": 20,
     "weight": 1200,
     "base_experience": 182,
+    "generation": "1",
     "name": {
       "fr": "Noadkoko",
       "en": "Exeggutor",
@@ -3531,6 +3634,7 @@ const pokemonData = {
     "height": 4,
     "weight": 65,
     "base_experience": 64,
+    "generation": "1",
     "name": {
       "fr": "Osselait",
       "en": "Cubone",
@@ -3563,6 +3667,7 @@ const pokemonData = {
     "height": 10,
     "weight": 450,
     "base_experience": 149,
+    "generation": "1",
     "name": {
       "fr": "Ossatueur",
       "en": "Marowak",
@@ -3595,6 +3700,7 @@ const pokemonData = {
     "height": 15,
     "weight": 498,
     "base_experience": 159,
+    "generation": "1",
     "name": {
       "fr": "Kicklee",
       "en": "Hitmonlee",
@@ -3627,6 +3733,7 @@ const pokemonData = {
     "height": 14,
     "weight": 502,
     "base_experience": 159,
+    "generation": "1",
     "name": {
       "fr": "Tygnon",
       "en": "Hitmonchan",
@@ -3659,6 +3766,7 @@ const pokemonData = {
     "height": 12,
     "weight": 655,
     "base_experience": 77,
+    "generation": "1",
     "name": {
       "fr": "Excelangue",
       "en": "Lickitung",
@@ -3691,6 +3799,7 @@ const pokemonData = {
     "height": 6,
     "weight": 10,
     "base_experience": 68,
+    "generation": "1",
     "name": {
       "fr": "Smogo",
       "en": "Koffing",
@@ -3723,6 +3832,7 @@ const pokemonData = {
     "height": 12,
     "weight": 95,
     "base_experience": 172,
+    "generation": "1",
     "name": {
       "fr": "Smogogo",
       "en": "Weezing",
@@ -3755,6 +3865,7 @@ const pokemonData = {
     "height": 10,
     "weight": 1150,
     "base_experience": 69,
+    "generation": "1",
     "name": {
       "fr": "Rhinocorne",
       "en": "Rhyhorn",
@@ -3791,6 +3902,7 @@ const pokemonData = {
     "height": 19,
     "weight": 1200,
     "base_experience": 170,
+    "generation": "1",
     "name": {
       "fr": "Rhinoféros",
       "en": "Rhydon",
@@ -3828,6 +3940,7 @@ const pokemonData = {
     "height": 11,
     "weight": 346,
     "base_experience": 395,
+    "generation": "1",
     "name": {
       "fr": "Leveinard",
       "en": "Chansey",
@@ -3862,6 +3975,7 @@ const pokemonData = {
     "height": 10,
     "weight": 350,
     "base_experience": 87,
+    "generation": "1",
     "name": {
       "fr": "Saquedeneu",
       "en": "Tangela",
@@ -3894,6 +4008,7 @@ const pokemonData = {
     "height": 22,
     "weight": 800,
     "base_experience": 172,
+    "generation": "1",
     "name": {
       "fr": "Kangourex",
       "en": "Kangaskhan",
@@ -3924,6 +4039,7 @@ const pokemonData = {
     "height": 4,
     "weight": 80,
     "base_experience": 59,
+    "generation": "1",
     "name": {
       "fr": "Hypotrempe",
       "en": "Horsea",
@@ -3957,6 +4073,7 @@ const pokemonData = {
     "height": 12,
     "weight": 250,
     "base_experience": 154,
+    "generation": "1",
     "name": {
       "fr": "Hypocéan",
       "en": "Seadra",
@@ -3991,6 +4108,7 @@ const pokemonData = {
     "height": 6,
     "weight": 150,
     "base_experience": 64,
+    "generation": "1",
     "name": {
       "fr": "Poissirène",
       "en": "Goldeen",
@@ -4023,6 +4141,7 @@ const pokemonData = {
     "height": 13,
     "weight": 390,
     "base_experience": 158,
+    "generation": "1",
     "name": {
       "fr": "Poissoroy",
       "en": "Seaking",
@@ -4055,6 +4174,7 @@ const pokemonData = {
     "height": 8,
     "weight": 345,
     "base_experience": 68,
+    "generation": "1",
     "name": {
       "fr": "Stari",
       "en": "Staryu",
@@ -4087,6 +4207,7 @@ const pokemonData = {
     "height": 11,
     "weight": 800,
     "base_experience": 182,
+    "generation": "1",
     "name": {
       "fr": "Staross",
       "en": "Starmie",
@@ -4122,6 +4243,7 @@ const pokemonData = {
     "height": 13,
     "weight": 545,
     "base_experience": 161,
+    "generation": "1",
     "name": {
       "fr": "mr-mime",
       "en": "mr-mime",
@@ -4155,6 +4277,7 @@ const pokemonData = {
     "height": 15,
     "weight": 560,
     "base_experience": 100,
+    "generation": "1",
     "name": {
       "fr": "Insécateur",
       "en": "Scyther",
@@ -4191,6 +4314,7 @@ const pokemonData = {
     "height": 14,
     "weight": 406,
     "base_experience": 159,
+    "generation": "1",
     "name": {
       "fr": "Lippoutou",
       "en": "Jynx",
@@ -4226,6 +4350,7 @@ const pokemonData = {
     "height": 11,
     "weight": 300,
     "base_experience": 172,
+    "generation": "1",
     "name": {
       "fr": "Élektek",
       "en": "Electabuzz",
@@ -4260,6 +4385,7 @@ const pokemonData = {
     "height": 13,
     "weight": 445,
     "base_experience": 173,
+    "generation": "1",
     "name": {
       "fr": "Magmar",
       "en": "Magmar",
@@ -4294,6 +4420,7 @@ const pokemonData = {
     "height": 15,
     "weight": 550,
     "base_experience": 175,
+    "generation": "1",
     "name": {
       "fr": "Scarabrute",
       "en": "Pinsir",
@@ -4324,6 +4451,7 @@ const pokemonData = {
     "height": 14,
     "weight": 884,
     "base_experience": 172,
+    "generation": "1",
     "name": {
       "fr": "Tauros",
       "en": "Tauros",
@@ -4354,6 +4482,7 @@ const pokemonData = {
     "height": 9,
     "weight": 100,
     "base_experience": 40,
+    "generation": "1",
     "name": {
       "fr": "Magicarpe",
       "en": "Magikarp",
@@ -4386,6 +4515,7 @@ const pokemonData = {
     "height": 65,
     "weight": 2350,
     "base_experience": 189,
+    "generation": "1",
     "name": {
       "fr": "Léviator",
       "en": "Gyarados",
@@ -4421,6 +4551,7 @@ const pokemonData = {
     "height": 25,
     "weight": 2200,
     "base_experience": 187,
+    "generation": "1",
     "name": {
       "fr": "Lokhlass",
       "en": "Lapras",
@@ -4454,6 +4585,7 @@ const pokemonData = {
     "height": 3,
     "weight": 40,
     "base_experience": 101,
+    "generation": "1",
     "name": {
       "fr": "Métamorph",
       "en": "Ditto",
@@ -4484,6 +4616,7 @@ const pokemonData = {
     "height": 3,
     "weight": 65,
     "base_experience": 65,
+    "generation": "1",
     "name": {
       "fr": "Évoli",
       "en": "Eevee",
@@ -4523,6 +4656,7 @@ const pokemonData = {
     "height": 10,
     "weight": 290,
     "base_experience": 184,
+    "generation": "1",
     "name": {
       "fr": "Aquali",
       "en": "Vaporeon",
@@ -4555,6 +4689,7 @@ const pokemonData = {
     "height": 8,
     "weight": 245,
     "base_experience": 184,
+    "generation": "1",
     "name": {
       "fr": "Voltali",
       "en": "Jolteon",
@@ -4587,6 +4722,7 @@ const pokemonData = {
     "height": 9,
     "weight": 250,
     "base_experience": 184,
+    "generation": "1",
     "name": {
       "fr": "Pyroli",
       "en": "Flareon",
@@ -4619,6 +4755,7 @@ const pokemonData = {
     "height": 8,
     "weight": 365,
     "base_experience": 79,
+    "generation": "1",
     "name": {
       "fr": "Porygon",
       "en": "Porygon",
@@ -4652,6 +4789,7 @@ const pokemonData = {
     "height": 4,
     "weight": 75,
     "base_experience": 71,
+    "generation": "1",
     "name": {
       "fr": "Amonita",
       "en": "Omanyte",
@@ -4687,6 +4825,7 @@ const pokemonData = {
     "height": 10,
     "weight": 350,
     "base_experience": 173,
+    "generation": "1",
     "name": {
       "fr": "Amonistar",
       "en": "Omastar",
@@ -4722,6 +4861,7 @@ const pokemonData = {
     "height": 5,
     "weight": 115,
     "base_experience": 71,
+    "generation": "1",
     "name": {
       "fr": "Kabuto",
       "en": "Kabuto",
@@ -4757,6 +4897,7 @@ const pokemonData = {
     "height": 13,
     "weight": 405,
     "base_experience": 173,
+    "generation": "1",
     "name": {
       "fr": "Kabutops",
       "en": "Kabutops",
@@ -4792,6 +4933,7 @@ const pokemonData = {
     "height": 18,
     "weight": 590,
     "base_experience": 180,
+    "generation": "1",
     "name": {
       "fr": "Ptéra",
       "en": "Aerodactyl",
@@ -4825,6 +4967,7 @@ const pokemonData = {
     "height": 21,
     "weight": 4600,
     "base_experience": 189,
+    "generation": "1",
     "name": {
       "fr": "Ronflex",
       "en": "Snorlax",
@@ -4857,6 +5000,7 @@ const pokemonData = {
     "height": 17,
     "weight": 554,
     "base_experience": 261,
+    "generation": "1",
     "name": {
       "fr": "Artikodin",
       "en": "Articuno",
@@ -4890,6 +5034,7 @@ const pokemonData = {
     "height": 16,
     "weight": 526,
     "base_experience": 261,
+    "generation": "1",
     "name": {
       "fr": "Électhor",
       "en": "Zapdos",
@@ -4923,6 +5068,7 @@ const pokemonData = {
     "height": 20,
     "weight": 600,
     "base_experience": 261,
+    "generation": "1",
     "name": {
       "fr": "Sulfura",
       "en": "Moltres",
@@ -4956,6 +5102,7 @@ const pokemonData = {
     "height": 18,
     "weight": 33,
     "base_experience": 60,
+    "generation": "1",
     "name": {
       "fr": "Minidraco",
       "en": "Dratini",
@@ -4989,6 +5136,7 @@ const pokemonData = {
     "height": 40,
     "weight": 165,
     "base_experience": 147,
+    "generation": "1",
     "name": {
       "fr": "Draco",
       "en": "Dragonair",
@@ -5023,6 +5171,7 @@ const pokemonData = {
     "height": 22,
     "weight": 2100,
     "base_experience": 270,
+    "generation": "1",
     "name": {
       "fr": "Dracolosse",
       "en": "Dragonite",
@@ -5059,6 +5208,7 @@ const pokemonData = {
     "height": 20,
     "weight": 1220,
     "base_experience": 306,
+    "generation": "1",
     "name": {
       "fr": "Mewtwo",
       "en": "Mewtwo",
@@ -5089,6 +5239,7 @@ const pokemonData = {
     "height": 4,
     "weight": 40,
     "base_experience": 270,
+    "generation": "1",
     "name": {
       "fr": "Mew",
       "en": "Mew",
@@ -5119,6 +5270,7 @@ const pokemonData = {
     "height": 9,
     "weight": 64,
     "base_experience": 64,
+    "generation": "1",
     "name": {
       "fr": "Germignon",
       "en": "Chikorita",
@@ -5152,6 +5304,7 @@ const pokemonData = {
     "height": 12,
     "weight": 158,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Macronium",
       "en": "Bayleef",
@@ -5186,6 +5339,7 @@ const pokemonData = {
     "height": 18,
     "weight": 1005,
     "base_experience": 236,
+    "generation": "1",
     "name": {
       "fr": "Méganium",
       "en": "Meganium",
@@ -5219,6 +5373,7 @@ const pokemonData = {
     "height": 5,
     "weight": 79,
     "base_experience": 62,
+    "generation": "1",
     "name": {
       "fr": "Héricendre",
       "en": "Cyndaquil",
@@ -5253,6 +5408,7 @@ const pokemonData = {
     "height": 9,
     "weight": 190,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Feurisson",
       "en": "Quilava",
@@ -5288,6 +5444,7 @@ const pokemonData = {
     "height": 17,
     "weight": 795,
     "base_experience": 240,
+    "generation": "1",
     "name": {
       "fr": "Typhlosion",
       "en": "Typhlosion",
@@ -5321,6 +5478,7 @@ const pokemonData = {
     "height": 6,
     "weight": 95,
     "base_experience": 63,
+    "generation": "1",
     "name": {
       "fr": "Kaiminus",
       "en": "Totodile",
@@ -5354,6 +5512,7 @@ const pokemonData = {
     "height": 11,
     "weight": 250,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Crocrodil",
       "en": "Croconaw",
@@ -5388,6 +5547,7 @@ const pokemonData = {
     "height": 23,
     "weight": 888,
     "base_experience": 239,
+    "generation": "1",
     "name": {
       "fr": "Aligatueur",
       "en": "Feraligatr",
@@ -5421,6 +5581,7 @@ const pokemonData = {
     "height": 8,
     "weight": 60,
     "base_experience": 43,
+    "generation": "1",
     "name": {
       "fr": "Fouinette",
       "en": "Sentret",
@@ -5453,6 +5614,7 @@ const pokemonData = {
     "height": 18,
     "weight": 325,
     "base_experience": 145,
+    "generation": "1",
     "name": {
       "fr": "Fouinar",
       "en": "Furret",
@@ -5485,6 +5647,7 @@ const pokemonData = {
     "height": 7,
     "weight": 212,
     "base_experience": 52,
+    "generation": "1",
     "name": {
       "fr": "Hoothoot",
       "en": "Hoothoot",
@@ -5520,6 +5683,7 @@ const pokemonData = {
     "height": 16,
     "weight": 408,
     "base_experience": 155,
+    "generation": "1",
     "name": {
       "fr": "Noarfang",
       "en": "Noctowl",
@@ -5555,6 +5719,7 @@ const pokemonData = {
     "height": 10,
     "weight": 108,
     "base_experience": 53,
+    "generation": "1",
     "name": {
       "fr": "Coxy",
       "en": "Ledyba",
@@ -5590,6 +5755,7 @@ const pokemonData = {
     "height": 14,
     "weight": 356,
     "base_experience": 137,
+    "generation": "1",
     "name": {
       "fr": "Coxyclaque",
       "en": "Ledian",
@@ -5625,6 +5791,7 @@ const pokemonData = {
     "height": 5,
     "weight": 85,
     "base_experience": 50,
+    "generation": "1",
     "name": {
       "fr": "Mimigal",
       "en": "Spinarak",
@@ -5660,6 +5827,7 @@ const pokemonData = {
     "height": 11,
     "weight": 335,
     "base_experience": 137,
+    "generation": "1",
     "name": {
       "fr": "Migalos",
       "en": "Ariados",
@@ -5695,6 +5863,7 @@ const pokemonData = {
     "height": 18,
     "weight": 750,
     "base_experience": 241,
+    "generation": "1",
     "name": {
       "fr": "Nostenfer",
       "en": "Crobat",
@@ -5731,6 +5900,7 @@ const pokemonData = {
     "height": 5,
     "weight": 120,
     "base_experience": 66,
+    "generation": "1",
     "name": {
       "fr": "Loupio",
       "en": "Chinchou",
@@ -5766,6 +5936,7 @@ const pokemonData = {
     "height": 12,
     "weight": 225,
     "base_experience": 161,
+    "generation": "1",
     "name": {
       "fr": "Lanturn",
       "en": "Lanturn",
@@ -5801,6 +5972,7 @@ const pokemonData = {
     "height": 3,
     "weight": 20,
     "base_experience": 41,
+    "generation": "1",
     "name": {
       "fr": "Pichu",
       "en": "Pichu",
@@ -5834,6 +6006,7 @@ const pokemonData = {
     "height": 3,
     "weight": 30,
     "base_experience": 44,
+    "generation": "1",
     "name": {
       "fr": "Mélo",
       "en": "Cleffa",
@@ -5867,6 +6040,7 @@ const pokemonData = {
     "height": 3,
     "weight": 10,
     "base_experience": 42,
+    "generation": "1",
     "name": {
       "fr": "Toudoudou",
       "en": "Igglybuff",
@@ -5903,6 +6077,7 @@ const pokemonData = {
     "height": 3,
     "weight": 15,
     "base_experience": 49,
+    "generation": "1",
     "name": {
       "fr": "Togepi",
       "en": "Togepi",
@@ -5936,6 +6111,7 @@ const pokemonData = {
     "height": 6,
     "weight": 32,
     "base_experience": 142,
+    "generation": "1",
     "name": {
       "fr": "Togetic",
       "en": "Togetic",
@@ -5973,6 +6149,7 @@ const pokemonData = {
     "height": 2,
     "weight": 20,
     "base_experience": 64,
+    "generation": "1",
     "name": {
       "fr": "Natu",
       "en": "Natu",
@@ -6008,6 +6185,7 @@ const pokemonData = {
     "height": 15,
     "weight": 150,
     "base_experience": 165,
+    "generation": "1",
     "name": {
       "fr": "Xatu",
       "en": "Xatu",
@@ -6043,6 +6221,7 @@ const pokemonData = {
     "height": 6,
     "weight": 78,
     "base_experience": 56,
+    "generation": "1",
     "name": {
       "fr": "Wattouat",
       "en": "Mareep",
@@ -6076,6 +6255,7 @@ const pokemonData = {
     "height": 8,
     "weight": 133,
     "base_experience": 128,
+    "generation": "1",
     "name": {
       "fr": "Lainergie",
       "en": "Flaaffy",
@@ -6110,6 +6290,7 @@ const pokemonData = {
     "height": 14,
     "weight": 615,
     "base_experience": 230,
+    "generation": "1",
     "name": {
       "fr": "Pharamp",
       "en": "Ampharos",
@@ -6143,6 +6324,7 @@ const pokemonData = {
     "height": 4,
     "weight": 58,
     "base_experience": 221,
+    "generation": "1",
     "name": {
       "fr": "Joliflor",
       "en": "Bellossom",
@@ -6176,6 +6358,7 @@ const pokemonData = {
     "height": 4,
     "weight": 85,
     "base_experience": 88,
+    "generation": "1",
     "name": {
       "fr": "Marill",
       "en": "Marill",
@@ -6213,6 +6396,7 @@ const pokemonData = {
     "height": 8,
     "weight": 285,
     "base_experience": 189,
+    "generation": "1",
     "name": {
       "fr": "Azumarill",
       "en": "Azumarill",
@@ -6249,6 +6433,7 @@ const pokemonData = {
     "height": 12,
     "weight": 380,
     "base_experience": 144,
+    "generation": "1",
     "name": {
       "fr": "Simularbre",
       "en": "Sudowoodo",
@@ -6281,6 +6466,7 @@ const pokemonData = {
     "height": 11,
     "weight": 339,
     "base_experience": 225,
+    "generation": "1",
     "name": {
       "fr": "Tarpaud",
       "en": "Politoed",
@@ -6314,6 +6500,7 @@ const pokemonData = {
     "height": 4,
     "weight": 5,
     "base_experience": 50,
+    "generation": "1",
     "name": {
       "fr": "Granivol",
       "en": "Hoppip",
@@ -6350,6 +6537,7 @@ const pokemonData = {
     "height": 6,
     "weight": 10,
     "base_experience": 119,
+    "generation": "1",
     "name": {
       "fr": "Floravol",
       "en": "Skiploom",
@@ -6387,6 +6575,7 @@ const pokemonData = {
     "height": 8,
     "weight": 30,
     "base_experience": 207,
+    "generation": "1",
     "name": {
       "fr": "Cotovol",
       "en": "Jumpluff",
@@ -6423,6 +6612,7 @@ const pokemonData = {
     "height": 8,
     "weight": 115,
     "base_experience": 72,
+    "generation": "1",
     "name": {
       "fr": "Capumain",
       "en": "Aipom",
@@ -6455,6 +6645,7 @@ const pokemonData = {
     "height": 3,
     "weight": 18,
     "base_experience": 36,
+    "generation": "1",
     "name": {
       "fr": "Tournegrin",
       "en": "Sunkern",
@@ -6487,6 +6678,7 @@ const pokemonData = {
     "height": 8,
     "weight": 85,
     "base_experience": 149,
+    "generation": "1",
     "name": {
       "fr": "Héliatronc",
       "en": "Sunflora",
@@ -6519,6 +6711,7 @@ const pokemonData = {
     "height": 12,
     "weight": 380,
     "base_experience": 78,
+    "generation": "1",
     "name": {
       "fr": "Yanma",
       "en": "Yanma",
@@ -6554,6 +6747,7 @@ const pokemonData = {
     "height": 4,
     "weight": 85,
     "base_experience": 42,
+    "generation": "1",
     "name": {
       "fr": "Axoloto",
       "en": "Wooper",
@@ -6589,6 +6783,7 @@ const pokemonData = {
     "height": 14,
     "weight": 750,
     "base_experience": 151,
+    "generation": "1",
     "name": {
       "fr": "Maraiste",
       "en": "Quagsire",
@@ -6624,6 +6819,7 @@ const pokemonData = {
     "height": 9,
     "weight": 265,
     "base_experience": 184,
+    "generation": "1",
     "name": {
       "fr": "Mentali",
       "en": "Espeon",
@@ -6656,6 +6852,7 @@ const pokemonData = {
     "height": 10,
     "weight": 270,
     "base_experience": 184,
+    "generation": "1",
     "name": {
       "fr": "Noctali",
       "en": "Umbreon",
@@ -6688,6 +6885,7 @@ const pokemonData = {
     "height": 5,
     "weight": 21,
     "base_experience": 81,
+    "generation": "1",
     "name": {
       "fr": "Cornèbre",
       "en": "Murkrow",
@@ -6723,6 +6921,7 @@ const pokemonData = {
     "height": 20,
     "weight": 795,
     "base_experience": 172,
+    "generation": "1",
     "name": {
       "fr": "Roigada",
       "en": "Slowking",

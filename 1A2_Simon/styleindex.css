@@ -54,42 +54,6 @@ body {
     transform: scale(1.019);
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #1d1b1b4b;
-    gap: 10px;
-    border-radius: 60%;
-    margin: 20px auto;
-    width: fit-content;
-}
-
-.search-bar input,
-.search-bar select {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.search-bar {
-    border: none;
-    padding: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-.search-button {
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-bar .search-button img {
-    height: 60px;
-    width: 60px;
-}
 
 button {
     border: none;
@@ -99,15 +63,25 @@ button {
     border-radius: 5px;
     font-size: 25px;
     transition: 0.5s ease;
+
 }
 
 button:hover {
     transform: scale(1.019);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+
+}
+
 .catalog-button {
     display: block;
-    margin: 20px;
+    /*margin: 20px;*/
     padding: 15px 30px;
     background-color: #00000052;
     color: rgb(255, 255, 255);
@@ -116,10 +90,10 @@ button:hover {
     font-size: 18px;
     cursor: pointer;
     text-align: center;
+    justify-content: center;
 }
 
 .pokemon-cards {
-    margin-top: 250px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

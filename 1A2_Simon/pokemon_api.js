@@ -10,7 +10,8 @@ function listPokemonDetail(domElementId, pokemonData) {
             <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" />
             <p>${pokemon.identifier}</p>
             <p>Height: ${pokemon.height}</p>
-            <p>Weight: ${pokemon.weight}</p>
+            <p>Height: ${pokemon.height}</p>
+            <p>Type: ${pokemon.type_fr}</p>
             <p>Base Experience: ${pokemon.base_experience}</p>
         </div>
     `;
@@ -24,10 +25,10 @@ function getPokemonIdByName(name, pokemonData) {
     }
 }
 
-function listAllPokemon(domElementId, pokemonData) {
+function listAllPokemon(domElementId, pokemonData, liste) {
 
     const domElement = document.getElementById(domElementId);
-    domElement.innerHTML = Object.values(pokemonData).map(pokemon => `
+    domElement.innerHTML = Object.values(liste).map(pokemon => `
         <div class="card" style="background-color:${pokemon.type_color[0]}" onclick="goToDetail('${pokemon.identifier}')">
             <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" />
             <p>${pokemon.name.fr}</p>
@@ -129,11 +130,10 @@ function goToCatalogue() {
     window.location.href = 'catalogue.html#';
 }
 function goToDetail(pokemonId) {
-    alert(pokemonId);
     window.location.href = 'creature.html?pokemonName=' + pokemonId;
 }
 
-function goToCatalogue(pokemonName, pokemonType, pokemonGeneration) {
+function goToRecherche(pokemonName, pokemonType, pokemonGeneration) {
     window.location.href = 'catalogue.html?name=' + pokemonName + '&type=' + pokemonType + '&generation=' + pokemonGeneration;
 }
 
@@ -157,13 +157,12 @@ function searchPokemon(domElementId, pokemonData) {
     const nameInput = document.getElementById('pokemonName');
     const typeInput = document.getElementById('pokemonType');
     const generationInput = document.getElementById('pokemonGeneration');
-
     const filterAndDisplay = () => {
         const name = nameInput.value;
         const type = typeInput.value;
         const generation = generationInput.value;
         const filteredPokemon = filterPokemon(pokemonData, name, type, generation);
-        listAllPokemon(domElementId, filteredPokemon);
+        listAllPokemon(domElementId, pokemonData, filteredPokemon);
     };
 
 
@@ -193,6 +192,6 @@ function listCinqPokemon(domElementId, pokemonData, nb) {
         return result;
     }, {});
 
-    listAllPokemon(domElementId, filteredPokemonData);
+    listAllPokemon(domElementId, pokemonData, filteredPokemonData);
 
 }

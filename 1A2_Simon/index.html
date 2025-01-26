@@ -26,33 +26,18 @@
             <img class="profile-icon" src="img/profile.png" alt="Profile">
         </div>
     </header>
-    <div class="search-bar">
-        <input id="myNom" type="text" placeholder="Nom du Pokémon">
-        <select id="myType">
-            <option value="">Type</option>
-            <option value="Eau">Eau</option>
-            <option value="Feu">Feu</option>
-            <option value="Poison">Poison</option>
-            <option value="Plante">Plante</option>
-        </select>
-        <select id="myGeneration">
-            <option value="">Génération</option>
-            <option value="1">1ère Génération</option>
-            <option value="2">2ème Génération</option>
-            <option value="3">3ème Génération</option>
-        </select>
-        <button class="search-button"
-            onclick="goToCatalogue(document.getElementById('myNom').value,document.getElementById('myType').value,document.getElementById('myGeneration').value)">
-            <img src="img/search.png" alt="Rechercher">
-        </button>
-    </div>
     <main>
+        <div class="container">
+            <button class="catalog-button" onclick="goToCatalogue()">Découvre notre
+                catalogue complet</button>
+        </div>
+
+
+        <p class="container">Voici un échantillon</p>
         <section id="pokemonCarte" class="pokemon-cards">
             <script>listCinqPokemon("pokemonCarte", pokemonData, 5);</script>
         </section>
-        <div class="center-button-catalogue">
-            <button class="catalog-button" onclick="goToCatalogue()">Découvre notre catalogue complet</button>
-        </div>
+
     </main>
 </body>
 <footer>
