@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
     <script type="text/javascript" src="pokemon_data.js"></script>
     <link rel="stylesheet" href="styleindex.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="/img/logo.png"  alt="Logo">
+            <img src="img/logo.png" alt="Logo">
         </div>
         <div class="center-buttons">
             <button>Decouverte</button>
@@ -20,8 +22,8 @@
             <button>Ajout</button>
         </div>
         <div class="menu-profile">
-            <img class="menu-icon" src="/img/menu.png" alt="Menu">
-            <img class="profile-icon" src="/img/profile.png" alt="Profile">
+            <img class="menu-icon" src="img/menu.png" alt="Menu">
+            <img class="profile-icon" src="img/profile.png" alt="Profile">
         </div>
     </header>
     <div class="search-bar">
@@ -39,8 +41,9 @@
             <option value="2">2ème Génération</option>
             <option value="3">3ème Génération</option>
         </select>
-        <button class="search-button" onclick="goToCatalogue(document.getElementById('myNom').value,document.getElementById('myType').value,document.getElementById('myGeneration').value)">
-            <img src="/img/search.png"    alt="Rechercher">
+        <button class="search-button"
+            onclick="goToCatalogue(document.getElementById('myNom').value,document.getElementById('myType').value,document.getElementById('myGeneration').value)">
+            <img src="img/search.png" alt="Rechercher">
         </button>
     </div>
 
@@ -49,7 +52,7 @@
     <button class="catalog-button" onclick="goToCatalogue()">Découvre notre catalogue</button>
     <main>
         <section id="pokemonCarte" class="pokemon-cards">
-        <script>listCinqPokemon("pokemonCarte",pokemonData,5);</script>
+            <script>listCinqPokemon("pokemonCarte", pokemonData, 5);</script>
         </section>
     </main>
 </body>
@@ -61,4 +64,5 @@
         <li><a href="#">Suivez-nous</a></li>
     </ul>
 </footer>
+
 </html>

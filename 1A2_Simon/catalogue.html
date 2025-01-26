@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
     <script type="text/javascript" src="pokemon_data.js"></script>
     <link rel="stylesheet" href="stylecatalogue.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="/img/logo.png" onclick="goToIndex()" alt="Logo">
+            <img src="img/logo.png" onclick="goToIndex()" alt="Logo">
         </div>
         <script> window.onload = getQueryParams;    </script>
         <div class="search-bar center-buttons">
@@ -32,8 +34,8 @@
             </select>
         </div>
         <div class="menu-profile">
-            <img class="menu-icon" src="/img/menu.png" alt="Menu">
-            <img class="profile-icon" src="/img/profile.png" alt="Profile">
+            <img class="menu-icon" src="img/menu.png" alt="Menu">
+            <img class="profile-icon" src="img/profile.png" alt="Profile">
         </div>
     </header>
     <main>
@@ -42,10 +44,10 @@
         </div>
         <section id="pokemonCollection" class="pokemon-cards">
             <script>
-            listAllPokemon("pokemonCollection",pokemonData);
-            document.addEventListener('DOMContentLoaded', () => {searchPokemon('pokemonCollection', pokemonData);});
+                listAllPokemon("pokemonCollection", pokemonData);
+                document.addEventListener('DOMContentLoaded', () => { searchPokemon('pokemonCollection', pokemonData); });
             </script>
-            
+
 
         </section>
     </main>
@@ -58,4 +60,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

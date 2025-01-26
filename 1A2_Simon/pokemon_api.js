@@ -16,8 +16,8 @@ function listPokemonDetail(domElementId, pokemonData) {
 }
 
 function getPokemonIdByName(name, pokemonData) {
-    for (key in pokemonData){
-        if (name == pokemonData[key]["identifier"]){
+    for (key in pokemonData) {
+        if (name == pokemonData[key]["identifier"]) {
             return key;
         }
     }
@@ -28,9 +28,9 @@ function listAllPokemon(domElementId, pokemonData) {
     const domElement = document.getElementById(domElementId);
     domElement.innerHTML = Object.values(pokemonData).map(pokemon => `
         <div class="card" style="background-color:${pokemon.type_color[0]}" onclick="goToDetail(${pokemon.id})">
-            <img src="img/96px/${pokemon.id}.png" />
+            <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" />
             <p>${pokemon.name.fr}</p>
-            <p>N°${pokemon.id}</p>
+            <p>N°${getPokemonIdByName(pokemon.identifier, pokemonData)}</p>
         </div>
     `).join('');
 }
@@ -97,7 +97,7 @@ function addPokemonToCollection(domElementId, pokemonId, pokemonData) {
     const pokemon = pokemonData[pokemonId];
 
     const pokemonElement = document.createElement('div');
-    pokemonElement.classList.add('pokemon');    
+    pokemonElement.classList.add('pokemon');
     pokemonElement.id = 0; // On peut remplacer l'id par un id gÃ©nÃ©rÃ© unique (un nombre de milisecondes) avec l'objet Date() => voir la doc !
     // Stocker l'id gÃ©nÃ©rÃ© avec la date pourrait servir pour crÃ©er un bouton de suppression
     pokemonElement.innerHTML = `
@@ -113,13 +113,13 @@ function addPokemonToCollection(domElementId, pokemonId, pokemonData) {
 
 function deletePokemonFromCollection(domElementId) {
     const pokemonElement = document.getElementById(domElementId);
-    
+
     if (pokemonElement) {
         pokemonElement.remove();
     }
 }
 
-function changePokemonNickname(domElementId, newNickname) { 
+function changePokemonNickname(domElementId, newNickname) {
     const domElement = document.getElementById(domElementId);
     domElement.innerHTML = `<p>Surnom du pokemon modifié en ${newNickname}</p>`;
 }
@@ -131,7 +131,7 @@ function goToDetail(pokemonId) {
     window.location.href = 'creature.html#';
 }
 
-function goToCatalogue(pokemonName,pokemonType,pokemonGeneration) {
+function goToCatalogue(pokemonName, pokemonType, pokemonGeneration) {
     window.location.href = 'catalogue.html?name=' + pokemonName + '&type=' + pokemonType + '&generation=' + pokemonGeneration;
 }
 
@@ -140,7 +140,7 @@ function getQueryParams() {
     const name = params.get('name');
     const type = params.get('type');
     const generation = params.get('generation');
-    
+
     document.getElementById('pokemonName').value = name;
     document.getElementById('pokemonType').value = type;
     document.getElementById('pokemonGeneration').value = generation;
@@ -164,7 +164,7 @@ function searchPokemon(domElementId, pokemonData) {
         listAllPokemon(domElementId, filteredPokemon);
     };
 
-    
+
     nameInput.addEventListener('input', filterAndDisplay);
     typeInput.addEventListener('change', filterAndDisplay);
     generationInput.addEventListener('change', filterAndDisplay);
@@ -177,19 +177,20 @@ function filterPokemon(pokemonData, name, type, generation) {
         const matchesGeneration = generation ? pokemon.generation == generation : true;
         return matchesName && matchesType && matchesGeneration;
     });
-    
+
 }
 
 
 function listCinqPokemon(domElementId, pokemonData, nb) {
     const domElement = document.getElementById(domElementId);
-    const listeNombre = getRandomNumbers(5, 1, 200);
+    const listeNombre = getRandomNumbers(nb, 1, 200);
     const filteredPokemonData = Object.keys(pokemonData).reduce((result, key) => {
         if (listeNombre.includes(parseInt(key))) {
             result[key] = pokemonData[key];
         }
         return result;
     }, {});
+
     listAllPokemon(domElementId, filteredPokemonData);
 
 }
