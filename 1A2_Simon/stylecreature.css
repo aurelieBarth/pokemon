@@ -3,14 +3,17 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo img {
     height: 65px;
     transition: transform 0.5s ease;
     cursor: pointer;
 }
+
 .logo img:hover {
     transform: scale(1.019);
 }
+
 .menu-profile {
     display: flex;
     align-items: center;
@@ -20,22 +23,27 @@ header {
     transition: transform 0.5s ease;
     cursor: pointer;
 }
+
 .menu-icon {
     width: 40px;
     height: 40px;
     transition: transform 0.5s ease;
 }
+
 .menu-icon:hover {
     transform: scale(1.019);
 }
+
 .profile-icon {
     width: 70px;
     height: 70px;
     transition: transform 0.5s ease;
 }
+
 .profile-icon:hover {
     transform: scale(1.019);
 }
+
 .search-bar {
     display: flex;
     align-items: center;
@@ -46,7 +54,8 @@ header {
     width: fit-content;
 }
 
-.search-bar input, .search-bar select {
+.search-bar input,
+.search-bar select {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -58,15 +67,18 @@ header {
     padding: 10px;
     border-radius: 25px;
 }
-.search-button{
+
+.search-button {
     border: none;
     padding: 10px;
     border-radius: 5px;
 }
+
 .search-bar .search-button img {
     height: 60px;
     width: 60px;
 }
+
 button {
     border: none;
     background-color: #00000000;
@@ -80,6 +92,7 @@ button {
 button:hover {
     transform: scale(1.019);
 }
+
 .pokemon-cards {
     display: flex;
     justify-content: center;
@@ -93,7 +106,7 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -105,6 +118,7 @@ button:hover {
     max-width: 100%;
     border-radius: 10px;
 }
+
 footer {
     background-color: #333;
     color: white;
@@ -112,6 +126,7 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
+
 footer {
     background-color: #414040;
     padding: 20px;
@@ -119,6 +134,7 @@ footer {
     border-top: 1px solid #ddd;
     margin-top: auto;
 }
+
 footer ul {
     list-style: none;
     padding: 0;

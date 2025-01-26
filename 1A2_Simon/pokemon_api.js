@@ -6,7 +6,8 @@ function listPokemonDetail(domElementId, pokemonData) {
     const pokemon = pokemonData[pokId];
     const domElement = document.getElementById(domElementId);
     domElement.innerHTML = `
-        <div>
+        <div class="card" style="background-color:${pokemon.type_color[0]}" >
+            <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" />
             <p>${pokemon.identifier}</p>
             <p>Height: ${pokemon.height}</p>
             <p>Weight: ${pokemon.weight}</p>
@@ -27,7 +28,7 @@ function listAllPokemon(domElementId, pokemonData) {
 
     const domElement = document.getElementById(domElementId);
     domElement.innerHTML = Object.values(pokemonData).map(pokemon => `
-        <div class="card" style="background-color:${pokemon.type_color[0]}" onclick="goToDetail(${pokemon.id})">
+        <div class="card" style="background-color:${pokemon.type_color[0]}" onclick="goToDetail('${pokemon.identifier}')">
             <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" />
             <p>${pokemon.name.fr}</p>
             <p>N°${getPokemonIdByName(pokemon.identifier, pokemonData)}</p>
@@ -128,7 +129,8 @@ function goToCatalogue() {
     window.location.href = 'catalogue.html#';
 }
 function goToDetail(pokemonId) {
-    window.location.href = 'creature.html#';
+    alert(pokemonId);
+    window.location.href = 'creature.html?pokemonName=' + pokemonId;
 }
 
 function goToCatalogue(pokemonName, pokemonType, pokemonGeneration) {

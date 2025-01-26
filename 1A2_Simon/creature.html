@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,36 @@
     <script type="text/javascript" src="pokemon_data.js"></script>
     <link rel="stylesheet" href="stylecreature.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="/img/logo.png" alt="Logo">
-        </div>
-        <div class="search-bar center-buttons">
-            <input type="text" placeholder="Nom du Pokémon">
-            <select>
-                <option value="">Type</option>
-                <option value="eau">Eau</option>
-                <option value="feu">Feu</option>
-                <option value="plante">Plante</option>
-            </select>
-            <select>
-                <option value="">Génération</option>
-                <option value="1">1ère Génération</option>
-                <option value="2">2ème Génération</option>
-                <option value="3">3ème Génération</option>
-            </select>
+            <img src="img/logo.png" onclick="goToIndex()" alt="Logo">
         </div>
         <div class="menu-profile">
-            <img class="menu-icon" src="/img/menu.png" alt="Menu">
-            <img class="profile-icon" src="/img/profile.png" alt="Profile">
+            <img class="menu-icon" src="img/menu.png" alt="Menu">
+            <img class="profile-icon" src="img/profile.png" alt="Profile">
         </div>
     </header>
-<footer>
-    <ul>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Aides</a></li>
-        <li><a href="#">Suivez-nous</a></li>
-    </ul>
-</footer>
+
+    <main>
+        <div class="filter-button-container">
+            <button class="filter-button">Filtrer</button>
+        </div>
+        <section id="pokemonDetail" class="pokemon-cards">
+            <script>
+                listPokemonDetail("pokemonDetail", pokemonData);
+            </script>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Aides</a></li>
+            <li><a href="#">Suivez-nous</a></li>
+        </ul>
+    </footer>

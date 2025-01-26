@@ -3,22 +3,27 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-body{
-    background-image: url(/img/background.png);
+
+body {
+    background-image: url(img/background.png);
     background-size: 100%;
 }
+
 .logo img {
     height: 65px;
     transition: transform 0.5s ease;
     cursor: pointer;
 }
+
 .logo img:hover {
     transform: scale(1.019);
 }
+
 .center-buttons {
     display: flex;
     gap: 10px;
 }
+
 .menu-profile {
     display: flex;
     align-items: center;
@@ -28,22 +33,27 @@ body{
     transition: transform 0.5s ease;
     cursor: pointer;
 }
+
 .menu-icon {
     width: 40px;
     height: 40px;
     transition: transform 0.5s ease;
 }
+
 .menu-icon:hover {
     transform: scale(1.019);
 }
+
 .profile-icon {
     width: 70px;
     height: 70px;
     transition: transform 0.5s ease;
 }
+
 .profile-icon:hover {
     transform: scale(1.019);
 }
+
 .search-bar {
     display: flex;
     align-items: center;
@@ -54,7 +64,8 @@ body{
     width: fit-content;
 }
 
-.search-bar input, .search-bar select {
+.search-bar input,
+.search-bar select {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -67,16 +78,19 @@ body{
     border-radius: 25px;
     cursor: pointer;
 }
-.search-button{
+
+.search-button {
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .search-bar .search-button img {
     height: 60px;
     width: 60px;
 }
+
 button {
     border: none;
     background-color: #00000000;
@@ -90,6 +104,7 @@ button {
 button:hover {
     transform: scale(1.019);
 }
+
 .catalog-button {
     display: block;
     margin: 20px;
@@ -102,20 +117,24 @@ button:hover {
     cursor: pointer;
     text-align: center;
 }
+
 .pokemon-cards {
+    margin-top: 250px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
 }
+
+
 
 .card {
     width: 200px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -127,6 +146,7 @@ button:hover {
     max-width: 100%;
     border-radius: 10px;
 }
+
 footer {
     background-color: #414040;
     padding: 20px;
@@ -134,6 +154,7 @@ footer {
     border-top: 1px solid #ddd;
     margin-top: auto;
 }
+
 footer ul {
     list-style: none;
     padding: 0;
@@ -152,4 +173,11 @@ footer ul li a {
 
 footer ul li a:hover {
     color: #0056b3;
+}
+
+.center-button-catalogue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
