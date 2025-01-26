@@ -1,0 +1,171 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    height: 65px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.logo img:hover {
+    transform: scale(1.019);
+}
+.menu-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 30px;
+    transition: transform 0.5s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.019);
+}
+
+.profile-icon {
+    width: 70px;
+    height: 50px;
+    transition: transform 0.5s ease;
+}
+
+.profile-icon:hover {
+    transform: scale(1.019);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #1d1b1b4b;
+    gap: 10px;
+    border-radius: 60%;
+    margin: 20px auto;
+    width: fit-content;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.search-bar input, .search-bar select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar {
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+}
+.search-button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.search-bar .search-button img {
+    height: 60px;
+    width: 60px;
+}
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pokemon-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+button {
+    border: none;
+    background-color: #00000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.019);
+}
+
+.filter-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #414040;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #0056b3;
+}
