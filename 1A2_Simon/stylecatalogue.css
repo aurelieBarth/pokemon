@@ -2,6 +2,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+}
+body{
+    background-image: url(img/background_catalogue.png);
+    background-size: 100%;
 }
 .logo img {
     height: 65px;
@@ -19,11 +24,12 @@ header {
     border-radius: 5px;
     transition: transform 0.5s ease;
     cursor: pointer;
+    background-color:#afa0a0b2;
 }
 
 .menu-icon {
     width: 40px;
-    height: 30px;
+    height: 40px;
     transition: transform 0.5s ease;
 }
 
@@ -33,7 +39,7 @@ header {
 
 .profile-icon {
     width: 70px;
-    height: 50px;
+    height: 70px;
     transition: transform 0.5s ease;
 }
 

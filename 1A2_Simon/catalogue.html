@@ -24,13 +24,23 @@
                 <option value="Eau">Eau</option>
                 <option value="Feu">Feu</option>
                 <option value="Poison">Poison</option>
-                <option value="Plante">Plante</option>
+                <option value="Électrique">Électrique</option>
+                <option value="Normal">Normal</option>
+                <option value="Glace">Glace</option>
+                <option value="Combat">Combat</option>
+                <option value="Sol">Sol</option>
+                <option value="Vol">Vol</option>
+                <option value="Psy">Psy</option>
+                <option value="Insecte">Insecte</option>
+                <option value="Roche">Roche</option>
+                <option value="Spectre">Spectre</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Ténèbres ">Ténèbres </option>
             </select>
             <select id="pokemonGeneration">
                 <option value="">Génération</option>
                 <option value="1">1ère Génération</option>
                 <option value="2">2ème Génération</option>
-                <option value="3">3ème Génération</option>
             </select>
         </div>
         <div class="menu-profile">
@@ -39,16 +49,14 @@
         </div>
     </header>
     <main>
-        <div class="filter-button-container">
-            <button class="filter-button">Filtrer</button>
+        <div class="filter-button-container" id>
+            <button class="filter-button">Ma Collection</button>
         </div>
         <section id="pokemonCollection" class="pokemon-cards">
             <script>
                 listAllPokemon("pokemonCollection", pokemonData, pokemonData);
                 document.addEventListener('DOMContentLoaded', () => { searchPokemon('pokemonCollection', pokemonData); });
             </script>
-
-
         </section>
     </main>
     <footer>

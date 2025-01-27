@@ -1,18 +1,3 @@
-function listCinqPokemon(domElementId, pokemonData, nb) {
-    const domElement = document.getElementById(domElementId);
-    const listeNombre = getRandomNumbers(nb, 1, 200);
-    const filteredPokemonData = Object.keys(pokemonData).reduce((result, key) => {
-        if (listeNombre.includes(parseInt(key))) {
-            result[key] = pokemonData[key];
-        }
-        return result;
-    }, {});
-
-    listAllPokemon(domElementId, pokemonData, filteredPokemonData);
-
-}
-
-
 function getPokemonDataByIds(pokemonData, liste) {
     const filteredPokemonData = Object.keys(pokemonData).reduce((result, key) => {
         if (liste.includes(parseInt(key))) {
@@ -22,64 +7,59 @@ function getPokemonDataByIds(pokemonData, liste) {
     }, {});
     return filteredPokemonData;
 }
-
 function listPokemonDetail(domElementId, pokemonData) {
     // A appeler dans un fichier html affichant le dÃ©tail d'un pokemon
-    const domElement = document.getElementById(domElementId);
-
-
-    //affichage du pokemom sélectionné
     const params = new URLSearchParams(document.location.search);
     const pokName = params.get("pokemonName");
     const pokId = getPokemonIdByName(pokName, pokemonData);
     const pokemon = pokemonData[pokId];
-
+    const domElement = document.getElementById(domElementId);
     domElement.innerHTML = `
+        <div class="navigation-bar">
+            <a href="goToDetail('${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) - 1}')">&larr; Pokémon Précédent<img src="img/96px/${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) - 1}.png" alt="${pokemon.name.fr}"/></a>
+            <a href="goToDetail('${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) + 1}')"><img src="img/96px/${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) + 1}.png" alt="${pokemon.name.fr}"/>Prochain Pokémon &rarr;</a>
+        </div>
         <div class="pokemon-container">
             <h2>${pokemon.name.fr} N°${getPokemonIdByName(pokemon.identifier, pokemonData)}</h2>
         </div>
-
         <div class="content">
             <div class="image">
-                <img src="img/full/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" alt="${pokemon.name.fr}">
+                <img src="img/full/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" alt="${pokemon.name.fr}"/>
             </div>
             <div class="info">
-                <p><strong>Taille :</strong> ${pokemon.height} m</p>
-                <p><strong>Poids :</strong> ${pokemon.weight}  kg</p>
-                <p><strong>Type :</strong> ${pokemon.type_fr}</p>
+                <p><strong>Taille :</strong> ${pokemon.height*10} Cm</p>
+                <p><strong>Poids :</strong> ${pokemon.weight/10} Kg</p>
+                <p><strong>Type(s) :</strong> ${pokemon.type_fr}</p>
+                <p><strong>Experience(s) :</strong> ${pokemon.base_experience}</p>
+                <p><strong>Generation :</strong> ${pokemon.generation}</p>
             </div>
-        </div>`;
-    domElement.innerHTML += `
+        </div>
         <div class="evolutions">
             <h3>Évolutions</h3>
-            <div class="evo-list">
+            <section class="evo-list">
 
         `;
 
     //affichage des évolutions
     let concatenatedList = [];
-    if (pokemon.evolutions_pre.length > 0 && pokemon.evolutions_next.length > 0) {
-        concatenatedList = pokemon.evolutions_pre.concat(pokemon.evolutions_next);
-    } else if (pokemon.evolutions_pre.length > 0) {
-        concatenatedList = pokemon.evolutions_pre;
-    }
-    else if (pokemon.evolutions_next.length > 0) {
-        concatenatedList = pokemon.evolutions_next;
-    }
+    if (pokemon.evolutions_pre.length > 0 && pokemon.evolutions_next.length > 0) {concatenatedList = pokemon.evolutions_pre.concat(pokemon.evolutions_next);
+    } else if (pokemon.evolutions_pre.length > 0) {concatenatedList = pokemon.evolutions_pre;
+}
+    else if (pokemon.evolutions_next.length > 0) {concatenatedList = pokemon.evolutions_next;
+}
 
-    if (concatenatedList.length > 0) {
-        const selectedPokemonData = getPokemonDataByIds(pokemonData, concatenatedList);
-
+    if (concatenatedList.length > 0) {const selectedPokemonData = getPokemonDataByIds(pokemonData, concatenatedList);
+        
         domElement.innerHTML += Object.values(selectedPokemonData).map(pokemon => `
                 <div class="evo-item" >
-                    <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" alt="Carapuce" />
+                    <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" alt="${pokemon.name.fr}" />
                     <p>N°${getPokemonIdByName(pokemon.identifier, pokemonData)}</p>
                 </div>  
             `).join('');
     }
     domElement.innerHTML += `
-                    </div>
-            </div>
+                </section>
+        </div>
         `;
 }
 
@@ -99,6 +79,15 @@ function listAllPokemon(domElementId, pokemonData, liste) {
             <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" />
             <p>${pokemon.name.fr}</p>
             <p>N°${getPokemonIdByName(pokemon.identifier, pokemonData)}</p>
+            <button>
+                <p>+</p>
+            </button>
+            <button>
+                <p>0</p>
+            </button>
+            <button>
+                <p>-</p>
+            </button>
         </div>
     `).join('');
 }
@@ -119,7 +108,6 @@ function getRandomPokemonData(pokemonData, count) {
     const randomPokemonData = randomIds.map(id => pokemonData[id]);
     return randomPokemonData;
 }
-
 
 
 function createPokemonDropdown(domElementId, pokemonData) {
@@ -249,3 +237,16 @@ function filterPokemon(pokemonData, name, type, generation) {
 }
 
 
+function listCinqPokemon(domElementId, pokemonData, nb) {
+    const domElement = document.getElementById(domElementId);
+    const listeNombre = getRandomNumbers(nb, 1, 200);
+    const filteredPokemonData = Object.keys(pokemonData).reduce((result, key) => {
+        if (listeNombre.includes(parseInt(key))) {
+            result[key] = pokemonData[key];
+        }
+        return result;
+    }, {});
+
+    listAllPokemon(domElementId, pokemonData, filteredPokemonData);
+
+}
