@@ -7,6 +7,22 @@ header {
 body {
     background-image: url(img/background.png);
     background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 1vh;
+    align-items: center;
 }
 
 .logo img {
@@ -70,18 +86,9 @@ button:hover {
     transform: scale(1.019);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    /* Centre horizontalement */
-    align-items: center;
-    /* Centre verticalement */
-
-}
-
 .catalog-button {
     display: block;
-    /*margin: 20px;*/
+    margin: 20px;
     padding: 15px 30px;
     background-color: #00000052;
     color: rgb(255, 255, 255);
@@ -98,10 +105,8 @@ button:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 20px;
+    padding: 150px;
 }
-
-
 
 .card {
     width: 200px;
@@ -114,11 +119,6 @@ button:hover {
 
 .card:hover {
     transform: scale(1.05);
-}
-
-.card img {
-    max-width: 100%;
-    border-radius: 10px;
 }
 
 footer {
@@ -147,11 +147,4 @@ footer ul li a {
 
 footer ul li a:hover {
     color: #0056b3;
-}
-
-.center-button-catalogue {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
