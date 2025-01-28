@@ -1,23 +1,22 @@
-function getPokemonDataByIds(pokemonData, liste) {
-    const filteredPokemonData = Object.keys(pokemonData).reduce((result, key) => {
-        if (liste.includes(parseInt(key))) {
-            result[key] = pokemonData[key];
-        }
-        return result;
-    }, {});
-    return filteredPokemonData;
-}
 function listPokemonDetail(domElementId, pokemonData) {
+
     // A appeler dans un fichier html affichant le dÃ©tail d'un pokemon
     const params = new URLSearchParams(document.location.search);
-    const pokName = params.get("pokemonName");
-    const pokId = getPokemonIdByName(pokName, pokemonData);
+    //const pokName = params.get("pokemonName");
+    //const pokId = getPokemonIdByName(pokName, pokemonData);
+    const pokId = params.get("pokemonName");
     const pokemon = pokemonData[pokId];
     const domElement = document.getElementById(domElementId);
     domElement.innerHTML = `
         <div class="navigation-bar">
-            <a href="goToDetail('${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) - 1}')">&larr; Pokémon Précédent<img src="img/96px/${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) - 1}.png" alt="${pokemon.name.fr}"/></a>
-            <a href="goToDetail('${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) + 1}')"><img src="img/96px/${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) + 1}.png" alt="${pokemon.name.fr}"/>Prochain Pokémon &rarr;</a>
+            <a href="#" onclick="goToDetail(${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) - 1})">&larr; 
+                Pokémon Précédent
+                <img src="img/96px/${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) - 1}.png" alt="${pokemon.name.fr}"/>
+            </a>
+            <a href="#" onclick="goToDetail(${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) + 1})">
+                <img src="img/96px/${Number(getPokemonIdByName(pokemon.identifier, pokemonData)) + 1}.png" alt="${pokemon.name.fr}"/>
+                Prochain Pokémon &rarr;
+            </a>
         </div>
         <div class="pokemon-container">
             <h2>${pokemon.name.fr} N°${getPokemonIdByName(pokemon.identifier, pokemonData)}</h2>
@@ -27,8 +26,8 @@ function listPokemonDetail(domElementId, pokemonData) {
                 <img src="img/full/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" alt="${pokemon.name.fr}"/>
             </div>
             <div class="info">
-                <p><strong>Taille :</strong> ${pokemon.height*10} Cm</p>
-                <p><strong>Poids :</strong> ${pokemon.weight/10} Kg</p>
+                <p><strong>Taille :</strong> ${pokemon.height * 10} Cm</p>
+                <p><strong>Poids :</strong> ${pokemon.weight / 10} Kg</p>
                 <p><strong>Type(s) :</strong> ${pokemon.type_fr}</p>
                 <p><strong>Experience(s) :</strong> ${pokemon.base_experience}</p>
                 <p><strong>Generation :</strong> ${pokemon.generation}</p>
@@ -42,14 +41,18 @@ function listPokemonDetail(domElementId, pokemonData) {
 
     //affichage des évolutions
     let concatenatedList = [];
-    if (pokemon.evolutions_pre.length > 0 && pokemon.evolutions_next.length > 0) {concatenatedList = pokemon.evolutions_pre.concat(pokemon.evolutions_next);
-    } else if (pokemon.evolutions_pre.length > 0) {concatenatedList = pokemon.evolutions_pre;
-}
-    else if (pokemon.evolutions_next.length > 0) {concatenatedList = pokemon.evolutions_next;
-}
+    if (pokemon.evolutions_pre.length > 0 && pokemon.evolutions_next.length > 0) {
+        concatenatedList = pokemon.evolutions_pre.concat(pokemon.evolutions_next);
+    } else if (pokemon.evolutions_pre.length > 0) {
+        concatenatedList = pokemon.evolutions_pre;
+    }
+    else if (pokemon.evolutions_next.length > 0) {
+        concatenatedList = pokemon.evolutions_next;
+    }
 
-    if (concatenatedList.length > 0) {const selectedPokemonData = getPokemonDataByIds(pokemonData, concatenatedList);
-        
+    if (concatenatedList.length > 0) {
+        const selectedPokemonData = getPokemonDataByIds(pokemonData, concatenatedList);
+
         domElement.innerHTML += Object.values(selectedPokemonData).map(pokemon => `
                 <div class="evo-item" >
                     <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" alt="${pokemon.name.fr}" />
@@ -63,19 +66,11 @@ function listPokemonDetail(domElementId, pokemonData) {
         `;
 }
 
-function getPokemonIdByName(name, pokemonData) {
-    for (key in pokemonData) {
-        if (name == pokemonData[key]["identifier"]) {
-            return key;
-        }
-    }
-}
-
 function listAllPokemon(domElementId, pokemonData, liste) {
 
     const domElement = document.getElementById(domElementId);
     domElement.innerHTML = Object.values(liste).map(pokemon => `
-        <div class="card" style="background-color:${pokemon.type_color[0]}" onclick="goToDetail('${pokemon.identifier}')">
+        <div class="card" style="background-color:${pokemon.type_color[0]}" onclick="goToDetail('${getPokemonIdByName(pokemon.identifier, pokemonData)}')">
             <img src="img/96px/${getPokemonIdByName(pokemon.identifier, pokemonData)}.png" />
             <p>${pokemon.name.fr}</p>
             <p>N°${getPokemonIdByName(pokemon.identifier, pokemonData)}</p>
@@ -92,6 +87,34 @@ function listAllPokemon(domElementId, pokemonData, liste) {
     `).join('');
 }
 
+function listAllPokemonFromCollection(domElementId, collectionData, pokemonData) {
+    const domElement = document.getElementById(domElementId);
+    const pokemons = collectionData.map(assoc => {
+        const pokemon = pokemonData[assoc.pokemon_id];
+        return {
+            ...pokemon,
+            pokemon_nickname: assoc.pokemon_nickname
+        };
+    });
+    domElement.innerHTML = pokemons.map(pokemon => `
+        <div>
+            <p>${pokemon.identifier}</p>
+            <p>Nickname: ${pokemon.pokemon_nickname}</p>
+        </div>
+    `).join('');
+}
+
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const type = params.get('type');
+    const generation = params.get('generation');
+
+    document.getElementById('pokemonName').value = name;
+    document.getElementById('pokemonType').value = type;
+    document.getElementById('pokemonGeneration').value = generation;
+}
+
 function getRandomNumbers(count, min, max) {
     const randomNumbers = [];
     while (randomNumbers.length < count) {
@@ -103,12 +126,29 @@ function getRandomNumbers(count, min, max) {
     return randomNumbers;
 }
 
+function getPokemonIdByName(name, pokemonData) {
+    for (key in pokemonData) {
+        if (name == pokemonData[key]["identifier"]) {
+            return key;
+        }
+    }
+}
+
 function getRandomPokemonData(pokemonData, count) {
     const randomIds = getRandomNumbers(count, 1, Object.keys(pokemonData).length);
     const randomPokemonData = randomIds.map(id => pokemonData[id]);
     return randomPokemonData;
 }
 
+function getPokemonDataByIds(pokemonData, liste) {
+    const filteredPokemonData = Object.keys(pokemonData).reduce((result, key) => {
+        if (liste.includes(parseInt(key))) {
+            result[key] = pokemonData[key];
+        }
+        return result;
+    }, {});
+    return filteredPokemonData;
+}
 
 function createPokemonDropdown(domElementId, pokemonData) {
     const domElement = document.getElementById(domElementId);
@@ -129,23 +169,6 @@ function createPokemonDropdown(domElementId, pokemonData) {
     });
 
     domElement.appendChild(selectElement);
-}
-
-function listAllPokemonFromCollection(domElementId, collectionData, pokemonData) {
-    const domElement = document.getElementById(domElementId);
-    const pokemons = collectionData.map(assoc => {
-        const pokemon = pokemonData[assoc.pokemon_id];
-        return {
-            ...pokemon,
-            pokemon_nickname: assoc.pokemon_nickname
-        };
-    });
-    domElement.innerHTML = pokemons.map(pokemon => `
-        <div>
-            <p>${pokemon.identifier}</p>
-            <p>Nickname: ${pokemon.pokemon_nickname}</p>
-        </div>
-    `).join('');
 }
 
 function addPokemonToCollection(domElementId, pokemonId, pokemonData) {
@@ -184,6 +207,7 @@ function changePokemonNickname(domElementId, newNickname) {
 function goToCatalogue() {
     window.location.href = 'catalogue.html#';
 }
+
 function goToDetail(pokemonId) {
     window.location.href = 'creature.html?pokemonName=' + pokemonId;
 }
@@ -192,22 +216,10 @@ function goToRecherche(pokemonName, pokemonType, pokemonGeneration) {
     window.location.href = 'catalogue.html?name=' + pokemonName + '&type=' + pokemonType + '&generation=' + pokemonGeneration;
 }
 
-function getQueryParams() {
-    const params = new URLSearchParams(window.location.search);
-    const name = params.get('name');
-    const type = params.get('type');
-    const generation = params.get('generation');
-
-    document.getElementById('pokemonName').value = name;
-    document.getElementById('pokemonType').value = type;
-    document.getElementById('pokemonGeneration').value = generation;
-}
-
-
-
 function goToIndex() {
     window.location.href = 'index.html';
 }
+
 function searchPokemon(domElementId, pokemonData) {
     const nameInput = document.getElementById('pokemonName');
     const typeInput = document.getElementById('pokemonType');
@@ -235,7 +247,6 @@ function filterPokemon(pokemonData, name, type, generation) {
     });
 
 }
-
 
 function listCinqPokemon(domElementId, pokemonData, nb) {
     const domElement = document.getElementById(domElementId);
